@@ -2,6 +2,11 @@ import javax.swing.JPanel;
 import java.awt.*;
 import java.awt.geom.*;
 
+/**
+ * 
+ * @author Josh Nachtigal
+ * @author Carson Sharpless
+ */
 public class Cat {
 	// drawing constants are private - noone needs to know what we're doing
 	// pick a head dimension
@@ -42,8 +47,8 @@ public class Cat {
 		y = catY + MOUTH_Y;
 		g2.fillOval(x, y, MOUTH_WIDTH, MOUTH_HEIGHT);
 		g2.setColor(Color.black);
-		// Meow text appears below cat head, +10 places below 
+		// Waaoow text appears below cat head, +10 places below 
 		// so it doesn't overlap the drawing
-		g2.drawString("Meow", catX, catY+HEAD_DIMENSION+10);	
+		g2.drawString("Waaoow", catX, catY+HEAD_DIMENSION+10);	
 	}
 }
